@@ -1,6 +1,6 @@
 //#region
 // Ədədlər üzərində əməliyyat; 5cic dereceden quvvet ve 3e bolunmeden qalan qaliq
-let num = 25;
+/*let num = 25;
 console.log(num**5);
 console.log(25%3)
 
@@ -105,8 +105,8 @@ else{
 
 //#region
 // reqem yaz herf cisin
-let Numsic = +prompt('reqem daxi let');
-switch(Numsic){
+let Nums = +prompt('reqem daxi let');
+switch(Nums){
     case 1:
         console.log  ('bir');
         break;
@@ -128,3 +128,69 @@ switch(Numsic){
 }
 //#endregion
 
+//#region
+// istifadeciden cinsini oyren m ve f herfi al
+let gender = prompt('Cinsini M ve ya F formasinda daxil et');
+let gender_size = gender == 'M' ? "male" : "famele";
+console.log(gender_size)
+//#endregion
+
+//#region
+let month = prompt('Ay nomresini daxil et');
+switch(month){
+    case "1":
+        console.log('Yanvar');
+        break;
+    case "2":
+        console.log('Fevral');
+        break;
+    case "3":
+        console.log('Mart');
+        break;
+    case "4":
+        console.log('Aprel');
+        break;
+    case "5":
+        console.log('May');
+        break;
+    case "6":
+        console.log('Iyun');
+        break;
+    case "7":
+        console.log('Iyul');
+        break;
+    case "8":
+        console.log('Bir ilde 12 ay var')  
+        break;
+        default:
+        console.log('Ilin 12 ayi var')          
+}
+//#endregion
+*/
+//#region
+let zaman = prompt('Ayi YYYY.MM.DD kimi daxil et');
+zaman = zaman.split('.');
+let bir = zaman[0];
+let iki = zaman[1];
+let uc = zaman[2];
+switch(iki){
+    case "01":
+        iki = "yanvar";
+        break;
+    case "02":
+        iki = "fevral";
+        break;
+    case "03":
+        iki = "mart";
+        break;
+    case "04":
+        iki = "aprel";
+        break;
+    case "05":
+        iki = "may";
+        break;
+    default:
+        alert(" Sablona uygun yaz")
+        
+}
+console.log(`${uc} ${iki} ${bir} cu il `)
