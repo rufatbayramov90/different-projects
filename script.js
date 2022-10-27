@@ -1,6 +1,6 @@
 //#region
 // Ədədlər üzərində əməliyyat; 5cic dereceden quvvet ve 3e bolunmeden qalan qaliq
-/*let num = 25;
+let num = 25;
 console.log(num**5);
 console.log(25%3)
 
@@ -10,6 +10,7 @@ let lastName = "Bayramov";
 console.log(`Sizin adiniz ${firstName} ${lastName}. Tanisligimiza cox sadam`)
 console.log(`Sizi bir daha gormeyimize sadiq, ${firstName} ${lastName}`)
 //#endregion
+
 //#region 
 // Addaki herflerin sayini konsola cixar
 let fullName = "Bayramov Rufat";
@@ -166,7 +167,7 @@ switch(month){
         console.log('Ilin 12 ayi var')          
 }
 //#endregion
-*/
+
 //#region
 let zaman = prompt('Ayi YYYY.MM.DD kimi daxil et');
 zaman = zaman.split('.');
@@ -194,3 +195,100 @@ switch(iki){
         
 }
 console.log(`${uc} ${iki} ${bir} cu il `)
+//#endregion
+
+//#region
+// konsola adiniz is a JS developer cixsin
+function logGreeting(){
+    return('Bayramov Rufat is a JS developer');
+}
+console.log(logGreeting())
+//#endregion
+
+//#region
+// Istifadeci adini parametr kimi qebul eden funksiya yazin
+function usrFntcn(name){
+    console.log(`${name} is active now`)
+}
+usrFntcn("Rufat");
+usrFntcn("Metin")
+//#endregion
+
+//#region
+//3 eded daxil et en boyuyu konsola cixsin
+function bigNumber(a,b,c){
+    if(a>b &&  a>c){
+        console.log(`${a} en boyuk ededdir`);
+    }else if(b>a && b>c){
+        console.log(`${b} en boyuk ededdir`);
+    }else{
+        console.log(`${c} en boyuk ededdir`);
+    }     
+}
+bigNumber(5,4,8);
+bigNumber(12,27,22);
+//#endregion
+
+//#region
+// butun hesablar rubl kimi versin
+let rubl = +prompt("rubl daxil et");
+let dolar = +prompt("dollar daxil et")
+let bos = 0;
+function valyuta(dolar,umumi){
+    umumi = rubl +  dolar*75;
+    console.log(`Butun mebleg: ${umumi}`)
+}
+valyuta(dolar,bos);
+//#endregion
+
+//#region
+//klavyaturada 1-den 99a daxil edilmis ededi herfler yazdir
+function sira(num){
+    switch(num){
+        case "1":
+            return('bir');
+        case "2":
+            return('iki');
+        case "3":
+            return('uc');
+        case "4":
+            return('dord');
+        case "5":
+            return('bes');
+        case "6":
+            return('alti');
+        case "7":
+            return('yeddi');
+        case "8":
+            return('sekkiz');
+        case "9":
+            return('doqquz');
+        case "10":
+            return('on');
+        case "20":
+            return('iyirmi');
+        case "30":
+            return('otuz');
+        case "40":
+            return('qirx');
+        case "50":
+            return('elli');
+        case "60":
+            return('altmis');
+        case "70":
+            return('yetmis');
+        case "80":
+            return('seksen');
+        case "90":
+            return('doxsan');
+        default:
+            return('iki reqemli eded daxi let')
+    }
+}
+
+
+
+
+
+
+
