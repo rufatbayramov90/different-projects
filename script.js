@@ -1,6 +1,6 @@
 //#region
 // Ədədlər üzərində əməliyyat; 5cic dereceden quvvet ve 3e bolunmeden qalan qaliq
-let num = 25;
+/*let num = 25;
 console.log(num**5);
 console.log(25%3)
 
@@ -243,7 +243,7 @@ valyuta(dolar,bos);
 
 //#region
 //klavyaturada 1-den 99a daxil edilmis ededi herfler yazdir
-function sira(num){
+function numberToText(num){
     switch(num){
         case "1":
             return('bir');
@@ -282,9 +282,53 @@ function sira(num){
         case "90":
             return('doxsan');
         default:
-            return('iki reqemli eded daxi let')
+            return('bir ve ya iki reqemli eded daxi et')
     }
 }
+let addnum = prompt('bir ve ya iki reqemli eded daxil et');
+if(addnum.length == 1 || addnum%10 == 0) {
+    console.log(numberToText(addnum));
+}else if(addnum.length == 2){
+       let qaliq = +addnum % 10;
+       let hesab = +addnum - qaliq;
+       console.log( numberToText(String(hesab)) , numberToText(String(qaliq)));
+}
+else{
+    console.log('Duz tetbiq etmediniz')
+}
+//#endregion
+
+//#region
+// Parametr kimi iki eded qebul eden ve onlarin en kiciyini qaytaran funksiyani tertib et
+function min(ilkreqem,ikincireqem){
+    let minNum= ilkreqem>ikincireqem ? ikincireqem : ilkreqem ;
+    return minNum;
+}
+let ilkreqem = +prompt('Ilk reqemi yaz');
+let ikincireqem = +prompt('Ikinci reqemi yaz');
+console.log(min(ilkreqem,ikincireqem))
+//#endregion
+
+
+//#region
+//Telefon nomresi 11 reqemden ibaret olsunve +7 ile baslasin
+function isvalidnumber(tel){
+    if((tel.length == 12) && (tel.startsWith("+7"))){
+        return true;
+    }else{
+        return false;
+    }
+}
+let resalt=isvalidnumber(prompt("nomre daxil et"));
+console.log(resalt);
+//#endregion
+*/
+
+//#region
+
+
+
+
 
 
 
