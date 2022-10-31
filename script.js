@@ -322,9 +322,57 @@ function isvalidnumber(tel){
 let resalt=isvalidnumber(prompt("nomre daxil et"));
 console.log(resalt);
 //#endregion
-*/
+
 
 //#region
+//iki reqemli ededi uc reqemli olana qeder artir
+function twoToThree(num){
+    if (num.length==2){
+        while(num<100){
+            num=+num+7;}
+            return num;
+    }else{
+        alert('yazdigin reqem 2 reqemli deyil');
+    }
+}
+let result = twoToThree(prompt('2 reqemli eded daxil et'));
+console.log(result)
+//#endregion
+
+
+
+//#region
+// Sonu 0 ile biten butun 3reqemli edeleri konsola cixar
+function endsZero(){
+    let i=100;
+    while(i<999){
+        if(i%10 == 0){
+            console.log(i);
+        }
+        i++;
+    }
+}
+endsZero();
+
+
+// #region
+// Metn elementleri tersine yazilsin
+let text=prompt("Enter the text..")
+for(i=text.length;i>=0;i--){
+    console.log(text[i])
+}
+//#enrregion
+*/
+//#region
+let text1 = prompt('salam.ey.dunya');
+for(i=0; i<=text1.length;i++){
+    if(text1[i] =="."){
+       console.log(i)
+    }
+}
+
+
+
 
 
 
