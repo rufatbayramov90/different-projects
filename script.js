@@ -362,25 +362,32 @@ for(i=text.length;i>=0;i--){
     console.log(text[i])
 }
 //#enrregion
-*/
+
 //#region
+// noqtenin indeksini tap
 let text1 = prompt('salam.ey.dunya');
 for(i=0; i<=text1.length;i++){
     if(text1[i] =="."){
        console.log(i)
     }
 }
+//#endregion
 
 
-
-
-
-
-
-
-
-
-
-
-
+//#region
+// setrde reqem olub olmadigini yoxla
+let mesaj = prompt("Metn daxil et");
+let nums = [0,1,2,3,4,5,6,7,8,9];
+for(let i=0; i<10;i++){
+    if(mesaj.indexOf(nums[i])>=0){
+        result = "setrde reqem var";
+        break;
+    }else{
+        result = "setrde reqem yoxdur";
+    }
+}
+console.log(result)
+//#endregion
+*/
+//#region
 
